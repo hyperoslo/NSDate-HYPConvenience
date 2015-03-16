@@ -13,12 +13,7 @@
     components.month = month;
     components.year = year;
 
-    NSDate *componentsDate = [calendar dateFromComponents:components];
-    NSTimeZone *timezone = [NSTimeZone localTimeZone];
-    NSInteger seconds = -[timezone secondsFromGMTForDate:componentsDate];
-    NSDate *localDate = [NSDate dateWithTimeInterval:seconds sinceDate:componentsDate];
-
-    return localDate;
+    return [calendar dateFromComponents:components];
 }
 
 + (NSDate *)hyp_timeForHour:(NSInteger)hour minute:(NSInteger)minute
@@ -34,12 +29,7 @@
     // with the default year, which is 0001
     components.year = 2000;
 
-    NSDate *componentsDate = [calendar dateFromComponents:components];
-    NSTimeZone *timezone = [NSTimeZone localTimeZone];
-    NSInteger seconds = -[timezone secondsFromGMTForDate:componentsDate];
-    NSDate *localDate = [NSDate dateWithTimeInterval:seconds sinceDate:componentsDate];
-
-    return localDate;
+    return [calendar dateFromComponents:components];
 }
 
 @end
