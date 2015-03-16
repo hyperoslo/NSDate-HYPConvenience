@@ -13,6 +13,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Source/**/*'
 
-#  s.frameworks = 'UIKit', 'MapKit'
-#  s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'Foundation'
 end
