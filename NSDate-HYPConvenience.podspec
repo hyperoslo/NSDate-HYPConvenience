@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "NSDate-HYPConvenience"
-  s.summary          = "A short description of NSDate-HYPConvenience."
+  s.summary          = "Convenience methods to generate NSDates"
   s.version          = "0.1"
   s.homepage         = "https://github.com/hyperoslo/NSDate-HYPConvenience"
   s.license          = 'MIT'
