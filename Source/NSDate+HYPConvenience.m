@@ -1,6 +1,6 @@
-#import "NSDate+HYPDate.h"
+#import "NSDate+HYPConvenience.h"
 
-@implementation NSDate (HYPDate)
+@implementation NSDate (HYPConvenience)
 
 #pragma mark - Helpers
 

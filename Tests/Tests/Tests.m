@@ -1,6 +1,6 @@
 @import XCTest;
 
-#import "NSDate+HYPDate.h"
+#import "NSDate+HYPConvenience.h"
 
 @interface Tests : XCTestCase
 

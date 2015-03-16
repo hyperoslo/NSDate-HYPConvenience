@@ -1,6 +1,6 @@
 @import Foundation;
 
-@interface NSDate (HYPDate)
+@interface NSDate (HYPConvenience)
 
 + (NSDate *)hyp_dateForDay:(NSInteger)day month:(NSInteger)month year:(NSInteger)year;
 
