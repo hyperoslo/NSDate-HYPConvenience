@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
-  s.name             = "NSDate-HYPDate"
-  s.summary          = "A short description of NSDate-HYPDate."
+  s.name             = "NSDate-HYPConvenience"
+  s.summary          = "A short description of NSDate-HYPConvenience."
   s.version          = "0.1"
-  s.homepage         = "https://github.com/hyperoslo/NSDate-HYPDate"
+  s.homepage         = "https://github.com/hyperoslo/NSDate-HYPConvenience"
   s.license          = 'MIT'
   s.author           = { "Hyper AS" => "teknologi@hyper.no" }
-  s.source           = { :git => "https://github.com/hyperoslo/NSDate-HYPDate.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/hyperoslo/NSDate-HYPConvenience.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/hyperoslo'
 
   s.platform     = :ios, '7.0'
