@@ -1,29 +1,34 @@
 @import XCTest;
 
+#import "NSDate+HYPDate.h"
+
 @interface Tests : XCTestCase
 
 @end
 
 @implementation Tests
 
-- (void)setUp
+- (void)testDateForDayMonthYear
 {
-    [super setUp];
-
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    NSDate *date = [NSDate hyp_dateForDay:1 month:1 year:2010];
+    XCTAssertEqualObjects(@"2010-01-01 00:00:00 +0000", [self localDateDescription:date]);
 }
 
-- (void)tearDown
+- (void)testTimeForHourMinute
 {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-
-    [super tearDown];
+    NSDate *date = [NSDate hyp_timeForHour:10 minute:10];
+    XCTAssertEqualObjects(@"2000-01-01 10:10:00 +0000", [self localDateDescription:date]);
 }
 
-- (void)testSampleTest
+#pragma mark - Helpers
+
+- (NSString *)localDateDescription:(NSDate *)date
 {
-    NSArray *array;
-    XCTAssertNil(array);
+    NSTimeZone *timezone = [NSTimeZone localTimeZone];
+    NSInteger seconds = [timezone secondsFromGMTForDate:date];
+    NSDate *localDate = [NSDate dateWithTimeInterval:seconds sinceDate:date];
+
+    return [localDate description];
 }
 
 @end
